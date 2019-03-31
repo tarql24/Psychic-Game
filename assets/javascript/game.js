@@ -8,7 +8,7 @@ var losses = 0;
 var ties = 0;
 
 // Create variables that hold references to the places in the HTML where we want to display things.
-// var directionsText = document.getElementById("directions-text");
+var directionsText = document.getElementById("directions-text");
 var userChoiceText = document.getElementById("userchoice-text");
 var computerChoiceText = document.getElementById("computerchoice-text");
 var winsText = document.getElementById("wins-text");
@@ -36,7 +36,7 @@ document.onkeyup = function (event) {
         }
 
         // Hide the directions
-        // directionsText.textContent = "";
+        directionsText.textContent = "";
 
         // Display the user and computer guesses, and wins/losses/ties.
         winsText.textContent = "wins: " + wins;
